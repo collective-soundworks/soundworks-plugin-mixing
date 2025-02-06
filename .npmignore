@@ -1,0 +1,10 @@
+.editorconfig
+tsconfig.json
+eslint.config.js
+
+tests
+
+# junk files
+.DS_Store
+Thumbs.db
+TODO.md
