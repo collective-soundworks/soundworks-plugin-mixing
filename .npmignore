@@ -3,6 +3,7 @@ tsconfig.json
 eslint.config.js
 
 tests
+.github
 
 # junk files
 .DS_Store
