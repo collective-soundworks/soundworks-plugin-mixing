@@ -32,15 +32,14 @@ class SwPluginMixing extends LitElement {
   }
 
   render() {
-
     return html`
+      <sw-mixer-track class="master-track" .state=${this.plugin.masterState}></sw-mixer-track>
+      <div class="sep"></div>
       ${repeat(this.plugin.trackCollection, state => state.id, (state) => {
         return html`
           <sw-mixer-track .state=${state}></sw-mixer-track>
         `;
       })}
-      <div class="sep"></div>
-      <sw-mixer-track class="master-track" .state=${this.plugin.masterState}></sw-mixer-track>
     `;
   }
 
